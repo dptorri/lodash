@@ -16,8 +16,13 @@ const users: User[] = [
 
 function App() {
   return (
-    <div className="App">
-      <p>map_(u, users)</p>
+    <div>
+      <strong>Users</strong>
+      <ul>
+        {map_(users, user => (
+          <li>{user.user}</li>
+        ))}
+      </ul>
     </div>
   );
 }
