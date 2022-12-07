@@ -1,5 +1,8 @@
-import React from 'react';
-import { map as map_ } from 'lodash-es';
+import { map as map_, filter } from 'lodash-es';
+import UsersSample from './common/UsersSample';
+import MapSample from './common/MapSample';
+
+import Title from './common/Title';
 
 
 interface User {
@@ -14,17 +17,37 @@ const users: User[] = [
 ];
 
 
+
+
 function App() {
   return (
     <div>
+      <Title />
+      <UsersSample />
+      <MapSample users={users}/>
+      {/* _.map */}
+
+      {/* 
+
+
+      <div>
+      <code>
+        <pre>{mapSample}</pre>
+      </code>
+      </div>
       <strong>Users</strong>
+      <div>
       <ul>
         {map_(users, user => (
           <li>{user.user}</li>
-        ))}
-      </ul>
+        ))} */}
+        {/* { filter(users, user => (
+          <li id="user.age">{ user.active === true }</li>
+        ))} 
+      </ul>*/}
     </div>
   );
 }
 
+export type { User };
 export default App;
