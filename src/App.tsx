@@ -1,6 +1,6 @@
-import { map as map_, filter } from 'lodash-es';
 import UsersSample from './common/UsersSample';
 import MapSample from './common/MapSample';
+import FilterSample from './common/FilterSample';
 
 import Title from './common/Title';
 
@@ -16,9 +16,6 @@ const users: User[] = [
   { 'user': 'fred', 'age': 40, 'active': false }
 ];
 
-
-
-
 function App() {
   return (
     <div>
@@ -26,11 +23,8 @@ function App() {
       <UsersSample />
       {/* _.map */}
       <MapSample users={users}/>
-      
-        {/* { filter(users, user => (
-          <li id="user.age">{ user.active === true }</li>
-        ))} 
-      </ul>*/}
+      {/* _.filters */}
+      <FilterSample users={users}/>
     </div>
   );
 }
