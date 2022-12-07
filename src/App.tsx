@@ -24,23 +24,9 @@ function App() {
     <div>
       <Title />
       <UsersSample />
-      <MapSample users={users}/>
       {/* _.map */}
-
-      {/* 
-
-
-      <div>
-      <code>
-        <pre>{mapSample}</pre>
-      </code>
-      </div>
-      <strong>Users</strong>
-      <div>
-      <ul>
-        {map_(users, user => (
-          <li>{user.user}</li>
-        ))} */}
+      <MapSample users={users}/>
+      
         {/* { filter(users, user => (
           <li id="user.age">{ user.active === true }</li>
         ))} 
