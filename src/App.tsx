@@ -21,9 +21,11 @@ function App() {
     <div>
       <Title />
       <UsersSample />
+
       {/* _.map */}
       <MapSample users={users}/>
-      {/* _.filters */}
+      
+      {/* _.filter */}
       <FilterSample users={users}/>
     </div>
   );

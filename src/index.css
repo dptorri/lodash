@@ -3,7 +3,7 @@ pre {
   padding: 1rem;
   overflow: auto;
   border-radius: 3px;
-  max-width: 80ch;
+  max-width: 60ch;
 }
 
 pre code {
